@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="pt-5"></div>
+  <div class="col-md-4 offset-md-4">
+    <form [formGroup]="signupForm" (ngSubmit)="submit();">
+      <div class="card">
+        <div class="card-body">
+          <h2 style="color:#fff;text-transform: uppercase;" class="text-center">Signup Form</h2>
+
+
+          <div class="form-group">
+            <label for="exampleInputName">Username</label>
+            <input type="text" class="form-control" placeholder="Username" [(ngModel)]="user.name" formControlName="name">
+            <span style="color:#fff" *ngIf="name && name.invalid && name.touched">Name is mandatory</span>
+    
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail">Email address</label>
+            <input type="email" class="form-control" placeholder="Enter email" [(ngModel)]="user.email"
+              formControlName="email">
+            <span style="color:#fff" *ngIf="email && email.invalid && email.touched">Please enter email</span>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputNumber">Mobile Number</label>
+            <input type="password" class="form-control" placeholder="Password" [(ngModel)]="user.number"
+              formControlName="number">
+            <span style="color:#fff" *ngIf="number && number.invalid && number.touched">Please enter number</span>
+    
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword">Password</label>
+            <input type="password" class="form-control" placeholder="Password" [(ngModel)]="user.pass"
+              formControlName="pass">
+            <span style="color:#fff" *ngIf="pass && pass.invalid && pass.touched">Please enter password</span>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputconfirmPassword">Confirm Password</label>
+            <input type="password" class="form-control" placeholder="Password" [(ngModel)]="user.cpass"
+              formControlName="cpass">
+            <span style="color:#fff" *ngIf="cpass && cpass.invalid && cpass.touched">Please enter confirm password</span>
+    
+    
+          </div>
+    
+       <div class="text-center">
+        <button type="submit" class="btn btn-success   text-center" [disabled]="signupForm.invalid">Submit</button>
+       </div>
+          <div class="pt-2"></div>
+          <div class="text-center">
+            <h3>Already a user ?<span><a style="color:#fff;text-transform: uppercase;" (click)="navigate()"> SignIn</a></span></h3>
+          </div>
+         
+        </div>
+      </div>
+     
+      <!-- <h3>Already a user ?<span><a [routerLink]="['/signin']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" style="color:#d1ab3e">Signin</a></span></h3> -->
+    
+   
+    <div class="pt-5"></div>    
+    </form>
+  </div>
+</div>

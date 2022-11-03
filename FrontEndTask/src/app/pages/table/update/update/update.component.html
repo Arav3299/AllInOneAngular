@@ -1,0 +1,57 @@
+<div class="container-fluid">
+  <div class="pt-5"></div>
+  <div class="col-md-4 offset-md-4">
+    <form [formGroup]="updateForm" (ngSubmit)="updateEmployee();">
+      <div class="card">
+        <div class="card-body">
+          <h2 style="color:#fff;text-transform: uppercase;" class="text-center">Edit Form</h2>
+
+
+
+          <div class="form-group">
+            <label for="exampleInputEmail">Employee Id</label>
+            <input type="text" class="form-control" placeholder="" [(ngModel)]="employee.employeeId"
+              formControlName="employeeId" [disabled]="true">
+            <span style="color:#fff" *ngIf="employeeId && employeeId.invalid && employeeId.touched">Please enter
+              employee id</span>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputNumber">Country</label>
+            <input type="text" class="form-control" placeholder=" " [(ngModel)]="employee.country"
+              formControlName="country">
+            <span style="color:#fff" *ngIf="country && country.invalid && country.touched">Please enter country</span>
+
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword">Mobile Number</label>
+            <input type="text" class="form-control" placeholder="" [(ngModel)]="employee.mobileNumber"
+              formControlName="mobileNumber">
+            <span style="color:#fff" *ngIf="mobileNumber && mobileNumber.invalid && mobileNumber.touched">Please enter
+              mobile number</span>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputconfirmPassword">Name</label>
+            <input type="text" class="form-control" placeholder=" " [(ngModel)]="employee.name" formControlName="name">
+            <span style="color:#fff" *ngIf="name && name.invalid && name.touched">Please enter name</span>
+
+
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary text-center button">Submit</button>
+          </div>
+          <div class="pt-2"></div>
+
+
+        </div>
+      </div>
+
+      <!-- <h3>Already a user ?<span><a [routerLink]="['/signin']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" style="color:#d1ab3e">Signin</a></span></h3> -->
+
+
+      <div class="pt-5"></div>
+    </form>
+  </div>
+</div>
+
+<!-- <app-dialog *ngIf="showDialog"></app-dialog> -->

@@ -1,0 +1,151 @@
+.mi-banner {
+    margin: 0 -10px;
+    padding-top: 0px;
+}
+.mi-banner .banner-wrap {
+    position: relative;
+}
+
+.mi-banner .banner-wrap img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.container-fluid
+{
+    padding: 0;
+}
+
+.waf-listing.widget-layout-129 .waf-head {
+    display: block;
+}
+
+p{
+    color:#fff;
+}
+
+.waf-listing.widget-layout-129.spotlight .head-wrap{
+    padding: 0 10px;
+}
+
+.waf-listing.widget-layout-129.spotlight .head-wrap .title {
+    position: relative;
+    width: 318px;
+    height: 110px;
+    text-indent: -9999px;
+}
+
+.waf-listing.widget-layout-129 .head-wrap .title {
+    position: relative;
+    width: 318px;
+    height: 110px;
+    text-indent: -9999px;
+}
+
+.head-wrap .title {
+    font-size: 30px;
+    color: #001848;
+    text-transform: uppercase;
+}
+
+.head-wrap {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    font-family: "NoirProMedium",sans-serif;
+    text-transform: capitalize;
+    position: relative;
+}
+
+p{
+    font-size:16px;
+}
+
+.pad-t-2
+{
+padding-top: 59px;
+}
+.data-img
+{
+    border-radius: 14px;
+}
+
+.circle
+{
+    border-radius: 50%;
+}
+.pt-5
+{
+    padding-top:65px;
+}
+h1
+{
+    color:#fff;
+}
+
+.blue
+{
+    background-color: rgb(67, 67, 204);
+}
+
+.blue img{
+    width:60%;
+    max-width: 60%;
+    height:60%;
+    padding: auto;
+
+}
+
+
+img{
+    vertical-align: middle;
+    border-style: none;
+}
+
+.newimg
+{
+    height:80%;
+}
+.monialimg {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    max-width: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.testi
+{
+    background-color: rgb(67, 67, 204);
+}
+
+
+.testimonial .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    z-index: 25;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 21%;
+    margin-bottom: -2rem;
+    margin-left: 21%;
+    list-style: none;
+}

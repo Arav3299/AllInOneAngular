@@ -1,0 +1,17 @@
+ 
+
+.container-fluid{
+    background-color: rgb(67, 67, 204);
+    color:#fff;
+}
+
+.card{
+    background-color: #d1ab3e;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 18%);
+    border-radius: 36px 12px 36px  12px;
+    
+}
+
+a{
+    cursor: pointer;
+}

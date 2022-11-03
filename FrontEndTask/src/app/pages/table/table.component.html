@@ -1,0 +1,52 @@
+<!-- <ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="medium" type="timer" [fullScreen] = "true">  
+  <p style="color: white; font-size: large;" >Please Wait....</p>  
+  </ngx-spinner>   -->
+  <ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="medium"  template="<img src='	https://media.giphy.com/avatars/mumbaiindians/JKlAc86cEAoD/200h.gif'/>">  
+    <p style="color: white; font-size: large;margin-top:42mm ;" >Please Wait....</p>  
+    </ngx-spinner>  
+  
+
+<div>    
+    <div class="row" style="margin-top:10px;">    
+      <div class="col-sm-12 btn btn-success">    
+        Staff's Details    
+      </div>    
+    </div>    
+    <!-- <div class="row" style="margin-top:10px;margin-bottom: 10px;">    
+    </div>     -->
+  </div>    
+  <hr style="background-color:black" />    
+  
+<div>  
+  
+    <table class="table table-dark table-striped">  
+      <thead>  
+        <tr>
+          <th></th>  
+          <th>Id</th>  
+          <th>EmployeeId</th>  
+          <th>Name</th>  
+          <th>Country</th>  
+          <th>mobileNumber</th>  
+          <th></th>
+          <th></th>
+        </tr>  
+      </thead>  
+      <tbody>  
+        <tr *ngFor="let e of emp"> 
+          <td></td> 
+          <td>{{e.id}}</td>  
+          <td>{{e.employeeId}}</td>  
+          <td>{{e.name}}</td>
+          <td>{{e.country}}</td>  
+          <td>{{e.mobileNumber}}</td>  
+          <td><button class="btn btn-primary newbutton" (click)="updateEmployee(e.id)">Edit</button></td>
+          <td><button class="btn btn-danger newbutton" (click)="deleteEmployee(e.id)">Delete</button></td>
+        </tr>  
+      </tbody>  
+    </table>  
+  </div>  
+
+  
+
+ 

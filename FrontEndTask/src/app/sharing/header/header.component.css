@@ -1,0 +1,375 @@
+.navbar-nav .nav-link{
+    color:var(--secondary-color);
+    
+    
+}
+
+.main-nav .active-link{
+    color:var(--primary-color);
+   
+}
+
+ 
+@import url('http://fonts.cdnfonts.com/css/noir');
+.logo{
+     /* display: inline-flex; */
+    height: 92px;
+    /* background-color: #001848; */
+    
+    
+    width: 176.865;
+} 
+/* .hi{
+    display: inline-flex;
+}   */
+.container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.ji{
+    width: 176.865px;
+}
+.container-fluid{
+    display: block;
+}
+
+.header-wrap {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-bottom: 4px solid #d1ab3e;
+}
+.navigation {
+    flex: 1;
+    position: relative;
+}
+.site-logo {
+    width: 14%;
+    height: 100%;
+    background-color: #001848;
+    position: absolute;
+    z-index: 1;
+}
+.site-logo .logo {
+    width: 85%;
+    height: 85%;
+    background-image: url(https://www.mumbaiindians.com/static-assets/images/cssimages/site-logo1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .4s;
+    position: relative;
+    z-index: 1;
+}
+.nav-wrap {
+    width: 86%;
+    margin-left: auto;
+}
+
+.site-header {
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+}
+
+.lang-wrapper {
+    margin-right: 20px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.lang-wrapper .lang-block {
+    background: #fff;
+    color: #001848;
+    font-weight: bold;
+    font-size: 11px;
+    position: relative;
+    text-align: center;
+    flex-basis: 33%;
+    max-width: 33%;
+    flex: 1;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.nav-top {
+    height: 40px;
+    background-color: #083f88;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    transition: .4s;
+}
+
+.nav-middle {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    font-size: 14px;
+    height: 52px;
+    position: relative;
+    transition: .4s;
+    background: #001848;
+    background: -moz-linear-gradient(top, #001848 0%, #030014 100%);
+    background: -webkit-linear-gradient(top, #001848 0%, #030014 100%);
+    background: linear-gradient(to bottom, #001848 0%, #030014 100%);
+}
+
+.main-nav {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-left: -30px;
+    font-weight: bold;
+    font-family: "NoirProMedium",sans-serif;
+    height: 100%;
+    text-transform: uppercase;
+    color:var(--secondary-color);
+}
+.main-nav>li {
+    transition: .4s;
+    position: relative;
+}
+
+.match-updates {
+    height: 100%;
+    transition: .4s;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 0 10px;
+}
+h1
+{
+    margin: 0;
+}
+.site-logo>a {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.site-logo:before {
+    content: "";
+    background: #001848;
+    background: -moz-linear-gradient(top, #001848 0%, #030014 100%);
+    background: -webkit-linear-gradient(top, #001848 0%, #030014 100%);
+    background: linear-gradient(to bottom, #001848 0%, #030014 100%);
+    position: absolute;
+    bottom: 0;
+    height: 52px;
+    width: 100%;
+}
+
+.match-updates .title {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: -3px;
+    font-family: "NoirProMedium",sans-serif;
+}
+
+.match-updates .trophy img{
+    width:100%;
+}
+
+img{
+    vertical-align: middle;
+    border-style: none;
+}
+
+.match-updates .trophy {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.top-slim-nav {
+    margin-left: auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    font-family: "NoirProMedium",sans-serif;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.lang-wrapper mobile
+{
+    display: none !important;
+}
+
+.section
+{
+    display: block !important;
+}
+
+.h2
+{
+    font-weight: 200;
+    line-height: 1.2;
+    color: #fff;
+}
+
+/* .main-nav>li.active>a, .main-nav>li.active>span, .main-nav>li:hover>a, .main-nav>li:hover>span {
+    color: #d1ab3e;
+} */
+
+.main-nav>li>a, .main-nav>li>span {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    transition: .2s;
+    height: 100%;
+    padding: 0 15px;
+}
+.a{
+    cursor: pointer;
+    text-decoration: none !important;
+    background-color: transparent;
+}
+
+a{
+    color:#fff;
+    cursor: pointer;
+    text-decoration: none !important;
+    background-color: transparent;
+}
+
+.main-nav>li:nth-last-child(1) {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.main-nav>li{
+    transition: .4s;
+    position: relative;
+}
+.main-nav .hamburger-menu {
+    width: 75px;
+    overflow: hidden;
+}
+
+.hamburger-menu {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main-nav .sub-ul {
+    position: absolute;
+    top: 85px;
+    background-color: #001848;
+    width: 210px;
+    font-size: 14px;
+    padding: 0 10px;
+    transition: .5s;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+ul{
+    margin-bottom: unset !important;
+    display: none;
+}
+
+.newsub
+{
+    padding:5px;
+
+}
+
+ 

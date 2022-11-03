@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~ngx-spinner/animations/timer.css";
+*{
+    padding : 0;
+    margin: 0;
+}
+:root{
+    --primary-color:#d1ab3e;
+    --secondary-color:#ffffff;
+}
+body{
+    font-family: 'Noir', sans-serif;
+    overflow-x: hidden;
+    
+     }
+li{
+    list-style-type: none;
+}
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+.btn:focus
+{
+    border: none !important;
+    outline: none;
+    display: inline-block;
+}
+
+ 

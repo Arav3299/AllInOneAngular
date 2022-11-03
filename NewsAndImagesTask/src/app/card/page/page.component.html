@@ -1,0 +1,98 @@
+<div *ngFor="let c of contents;index as i">
+
+
+<div class="container">
+
+<div class="col-md-12 col-12 pt-2">
+    <div class="row">
+         <div class="col-md-6 col-12 pt-2">
+            <div class="card">
+                <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-5 col-12">
+                            <div class="box">
+                                <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/blackpantherwakandaforever_lob_crd_05.jpg" width="93%">
+                                <ul class="icon">
+                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-12">
+                            
+                            <h5> Data News</h5>
+                            <p>{{c.newsContent}}</p>
+                            
+                                <div class="row data pt-2">
+                                    <div class="col-md-8 col-sm-6">
+                                    <b style="color:#f44178">    <i class="fa fa-clock-o" aria-hidden="true"></i> &nbsp;Posted </b> {{c.postedHours}} hours ago
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        {{c.shareIcon}}
+                                    </div>
+                                  </div>
+                          
+                             
+                        </div>
+                      </div>
+                </div>
+            </div>
+         </div>
+         <div class="col-md-6 col-12 pt-2">
+            <div class="card">
+                <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6 col-12">
+
+                        </div>
+                        <div class="col-md-6 col-12">
+                            
+                        </div>
+                      </div>
+                </div>
+            </div>
+         </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="container">
+
+<div >
+
+    <div class="col-md-12 col-12 pt-2">
+        <div class="row" >
+            <div class="col-md-3 pt-2" *ngFor="let c of contents;index as i">
+                <div class="card newset">
+                    <div class="card-body">
+                        <div class="box">
+                            <img src={{c.link}} width="93%">
+
+                            <!-- <div class="box-content">
+                                <h3 class="title">Williamson</h3>
+                                <span class="post">Web designer</span>
+                            </div> -->
+                            <ul class="icon">
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                <li><a href="#"><i class="fa fa-link"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <h5 class="pt-2"><b>{{c.title}}</b></h5>
+                        <p>{{c.newsContent}}</p>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <b style="color:#f44178">    <i class="fa fa-clock-o" aria-hidden="true"></i> &nbsp;Posted </b> {{c.postedHours}} hours ago
+                            </div>
+                            <div class="col-md-3">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+ 

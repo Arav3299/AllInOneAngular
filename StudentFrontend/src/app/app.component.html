@@ -1,0 +1,146 @@
+ 
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Student Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" (click)="hideList()">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" (click)="hideForm()">List</a>
+        </li>
+        <li class="nav-item dropdown">
+         
+        </li>
+      </ul>
+      <span class="navbar-text">
+       
+      </span>
+    </div>
+  </nav>
+</div>
+
+  <div *ngIf="isShown" class="contaniner">
+    <div class="card mt-5" style="align-items: center; margin-left: 25px; margin-right: 25px;">
+      <h1>Student Management</h1>
+    </div>
+    <div class="card mt-10" style="padding: 20px; margin: 25px; align-items: center;">
+      <form #registerForm="ngForm" (ngSubmit)="register(registerForm)" style="width: 100%;">
+        <div class="form-group">
+          <label class="label" for="age">Age :</label>
+          <input type="text" #age (ngModel)="age" name="age" id="age" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+          <label class="label" for="dob">Date of Birth :</label>
+          <input type="date" #dob (ngModel)="dob" name="dob" id="dob" class="form-control" placeholder="MM/DD/YYYY">
+        </div>
+        <div class="form-group">
+          <label class="label" for="jd">Joining Date :</label>
+          <input type="date" #jd (ngModel)="jd" name="jd" id="jd" class="form-control" placeholder="MM/DD/YYYY">
+        </div>
+        <div class="form-group">
+          <label class="label" for="name">Student Name :</label>
+          <input type="text" #name (ngModel)="name" name="name" id="name" class="form-control"
+            placeholder="Student Name">
+        </div>
+        <div class="form-group">
+          <label class="label" for="studentId">Student ID :</label>
+          <input type="text" #studentId (ngModel)="studentId" name="studentId" id="studentId" class="form-control"
+            placeholder="Student Id">
+        </div>
+        <div class="form-group">
+          <label class="label"></label>
+          <input type="submit" value="Register" class="btn btn-primary w-100">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div  *ngIf="isShowne" class=" mt-5">
+    <table class="table table-bordered">
+      <thead class="thead">
+        <tr>
+          <th style="text-align: center;">Dob</th>
+          <th style="text-align: center;">Age</th>
+          <th style="text-align: center;">Name</th>
+          <th style="text-align: center;">Jd</th>
+          <th style="text-align: center;">StudentId</th>
+          <th style="text-align: center;">Edit</th>
+          <th style="text-align: center;">Delete</th>
+        </tr>
+
+      </thead>
+      <tbody class="tbody">
+        <tr *ngFor="let stu of studentArray">
+          <td style="text-align:center ;">{{stu.dob}}</td>
+          <td style="text-align: center;">{{stu.age}}</td>
+          <td style="text-align: center;">{{stu.name}}</td>
+          <td style="text-align: center;">{{stu.jd}}</td>
+          <td style="text-align: center;">{{stu.studentId}}</td>
+          <td style="text-align: center;"><button class="btn btn-primary" type="button" data-bs-toggle="modal"
+              data-bs-target="#exampleModal" (click)="edits(stu);updateStudentDetails(updateForm)">Edit</button></td>
+          <td style="text-align: center;"><button class="btn btn-danger" (click)="deleteStudentDetails(stu)"
+              type="button">Delete</button></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Update Form </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form #updateForm="ngForm" (ngSubmit)="updateStudentDetails(updateForm)" style="width: 100%;">
+            <div class="form-group">
+              <label class="label" for="id">Id :</label>
+              <input type="text" #id [(ngModel)]="edit.id" name="id" id="id" class="form-control" placeholder="Id" disabled="true">
+            </div>
+            <div class="form-group">
+              <label class="label" for="age">Age :</label>
+              <input type="text" #age [(ngModel)]="edit.age" name="age" id="age" class="form-control" placeholder="Age">
+            </div>
+            <div class="form-group">
+              <label class="label" for="dob">Date of Birth :</label>
+              <input type="date" #dob [(ngModel)]="edit.dob" name="dob" id="dob" class="form-control" placeholder="MM/DD/YYYY">
+            </div>
+            <div class="form-group">
+              <label class="label" for="jd">Joining Date :</label>
+              <input type="date" #jd [(ngModel)]="edit.jd" name="jd" id="jd" class="form-control" placeholder="MM/DD/YYYY">
+            </div>
+            <div class="form-group">
+              <label class="label" for="name">Student Name :</label>
+              <input type="text" #name [(ngModel)]="edit.name" name="name" id="name" class="form-control"
+                placeholder="Student Name">
+            </div>
+            <div class="form-group">
+              <label class="label" for="studentId">Student ID :</label>
+              <input type="text" #studentId [(ngModel)]="edit.studentId" name="studentId" id="studentId" class="form-control"
+                placeholder="Student Id">
+            </div>
+            <div class="form-group">
+              <label class="label"></label>
+              <input type="submit"  value="Update" class="btn btn-primary w-100" >
+            </div>
+
+
+
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<router-outlet></router-outlet>
+<!-- routed goes here -->
